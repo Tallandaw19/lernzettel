@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Lernzettel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Infoteam GmbH</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Suche...">
+            <button type="submit">Suchen</button>
+        </div>
+        <div class="social-icons">
+            <a href="./facebook.png"><img src="./facebook.png" alt="Facebook"></a>
+            <a href="./twitter.png"><img src="./twitter.png" alt="Twitter"></a>
+            <a href="./insta.jpg"><img src="./insta.jpg" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Über uns</a>
+        <a href="#">Artikel</a>
+        <a href="#">Kontakt</a>
+    </nav>
+
+    <main class="main-content">
+        <section class="video-section">
+            <h2>Unser Video</h2>
+            <video controls width="100%">
+                <source src="video.mp4" type="video/mp4">
+                Dein Browser unterstützt dieses Videoformat nicht.
+            </video>
+        </section>
+        
+        <section class="podcast-section">
+            <h2>Unsere Podcasts</h2>
+            <ul>
+                <li><a href="./Eisverkauf.html">Rechner 1: Eisverkaufsrechner</a></li>
+                <li><a href="./nachschüssigen rechner.html">Rechner 2: nachschüssigen Rentenrechner</a></li>
+                <li><a href="./Multi-Taschenrechner.html">Rechner 3: Multi-Taschenrechner</a></li>
+                <li><a href="Lineare Abschreibung.html">Rechner 4: Lineare Abschreibungsrechner</a></li>
+                <li><a href="./zahlen ausgeben.html">Rechner 5: Zahlen Ausgeben</a></li>
+
+
+               
+            </ul>
+        </section>
+
+        <article class="article-section">
+            <h2>Ein spannender Artikel</h2>
+            <p>Dieser Artikel behandelt ein sehr interessantes Thema und bietet viele wertvolle Informationen.</p>
+            <p>Lesen Sie weiter, um mehr über dieses spannende Thema zu erfahren.</p>
+        </article>
+
+        <section class="newsletter-section">
+            <h2>Abonniere unseren Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Deine E-Mail Adresse">
+                <button type="submit">Abonnieren</button>
+            </form>
+        </section>
+
+        <section class="contact-section">
+            <h2>Kontaktieren Sie uns</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div>
+        <a href="./Eisverkauf.html">Zurück</a>
+        <a href="./Lineare abschreibung.html">Zurück</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">Impressum</a>
+    </div>
+    <p>&copy; 2024 Meine Webseite</p>
+</footer>
+</body>
+</html>

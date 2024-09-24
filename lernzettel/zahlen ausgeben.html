@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <title> Zahl Eingeben</title>
+    <script> 
+    function zeigeZahl() {
+        var zahl = document.getElementById("zahlInput").value;
+
+        document.getElementById("idOut").innerText = "Du hast die Zahl" + zahl + "eingegeben";
+    }
+
+    </script>
+</body>
+<h1> Zahl eingeben!</h1>
+<p> Bitte gib eine Zahl ein!</p>
+<input id = "zahlInput" type = "number" size ="" value="">
+<button onClick="zeigeZahl()">Ausgeben!</button>
+<br></br>
+<div id="idOut"></div>
+</body>
+</body></html>

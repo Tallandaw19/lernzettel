@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<head> Zahlen ausgeben</head>
+
+<button onClick="Zahlenausgabe()">Ausgeben!</button>
+<br><br>
+
+<div id="output"></div>
+
+
+<script>
+  function Zahlenausgabe() {
+      var start = 1;
+      var ausgabe = "";
+      
+      while (start <= 10) {
+          ausgabe = ausgabe + start;
+          
+          if (start < 10) {
+              ausgabe = ausgabe + " , ";
+          }
+          
+          start++;
+      }
+      
+      document.getElementById("output").innerText = ausgabe;
+  }
+
+
+
+</script>
+
+
+
+</head>
+<body>
+<h2>Wertetabelle Generator</h2>
+<label for="funktion">Funktion eingeben:</label>
+<input type="text" id="funktion" value="2*x+3">
+<br><br>
+<button onclick="erstelleTabelle()">Wertetabelle ausgeben!</button>
+
+<table id="wertetabelle">
+    <tr>
+        <th>x</th>
+        <th>f(x)</th>
+    </tr>
+</table>
+
+
+</script>
+
+<script>
+    function erstelleTabelle() {
+        var funktion = document.getElementById("funktion").value;
+        var table = document.getElementById("wertetabelle");
+
+        var rows = table.rows.length;
+        while (rows > 1) {
+            table.deleteRow(1);
+            rows--;
+        }
+
+        var x = 1;
+        while (x <= 10) {
+            var row = table.insertRow();
+            var cellX = row.insertCell(0);
+            var cellF = row.insertCell(1);
+            cellX.innerHTML = x;
+
+            var fX = eval(funktion.replace(/x/g, x));
+            cellF.innerHTML = fX;
+
+            x++;
+        }
+    }
+</script>
+
+
+
+
+</body>
+</html>
+
